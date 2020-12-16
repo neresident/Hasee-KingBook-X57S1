@@ -1,11 +1,11 @@
-# OpenCore For Hasee KingBook X57S1
+# Haskintosh for Hasee KingBook X57S1
 
- - OpenCore 0.6.1
+ - OpenCore
  - Intel Core i7-1065G7
  - Hasee HINS02   ( Intel 495 Series Chipset, Intel Ice Point-LP, Intel Ice Lake-U )
- - Memory 8 GB DDR4-2666 x2
+ - Memory 16 GB DDR4-2666 (8 GB x 2, upgradable) 
  - Realtek ALC256
- - Intel(R) Wi-Fi 6 AX201 160MHz
+ - Intel(R) Wi-Fi 6 AX201 160MHz / Working with BCM94360NG currently (requires kext to get full 5Ghz speeds)
  - BOEhydis NV156FHM-N61 [15.6" LCD]
  - [Geekbench Score] / [OpenCL Score] / [Metal Score]
 
@@ -13,24 +13,24 @@
 
 ### Functionality
  - [x] CPU Speedstep (XCPM)
- - [x] [4CH Audio] (4 Speaker )
- - [ ] Headphone
+ - [x] [4CH Audio] (2 Front + 2 Bottom speakers + Jack)
+ - [x] Headphone
  - [ ] HDMI (Video And Audio)
  - [x] Battery Management
- - [x] Usb (Built In)
+ - [x] Usb (with USB map)
  - [ ] Thunderbolt 3
- - [x] Wireless Network (AX201)
+ - [x] Wireless Network (Intel/Broadcom)
  - [x] Bluetooth
- - [x] Backlight
- - [x] Fn Brightness Keys
- - [x] I2C Touchpad (GPIO Mode) (IPIC IRQ 2 Disable) (Big Thanks to [ben9923])
- - [x] Sleep From (Lid)
- - [x] Sleep From (Fn+Esc Key)
+ - [x] Keyboard Brightness
+ - [x] Fn Brightness Keys (thanks to [zhen-zen] for YogaSMC)
+ - [x] Power Button = PWRB (thanks to [zhen-zen] for YogaSMC)
+ - [x] I2C Touchpad (GPIO Mode) (thanks to [ben9923], [zhen-zen])
+ - [x] Sleep/wake from LID (not stable)
+ - [x] Sleep from SLPB (Fn+Esc)
  - [ ] Wake Up (Usb Device)
  - [x] Wake Up (PS/2 Keyboard) (Big Thanks to [m0d16l14n1])
- - [x] Wake Up (Lid)
- - [x] WebCam
- - [x] SDHC CardReader
+ - [x] WebCam (OOTB)
+ - [x] SDHC CardReader (OOTB)
 
 
 ### How To Use
@@ -39,7 +39,7 @@
  3. Copy EFI folder to ESP/EFI Partition in HDD/SSD disk.
  5. [Modify BIOS For Advanced Setting] (Possible Collapse BIOS, IF YOU NOT DO IT RIGHT)
  6. Disable CFG Lock, Change DVMT to 128MB, And Disable CFG Fix in config.plist
-
+ 7. If you have any problems with installation - use [dortania] guides
 
 ### Tools
   - [OpenCorePkg]
@@ -47,12 +47,6 @@
   - [Maciasl]
   - [DarwinDumper]
   - [BootDiskUtility]
-
-
-### Reference
-  - [Brightness-Keys](https://www.tonymacx86.com/threads/guide-patching-dsdt-ssdt-for-laptop-backlight-control.152659/)
-  - [Battery Patching](https://github.com/daliansky/OC-little/tree/master/08-%E7%94%B5%E6%B1%A0%E8%A1%A5%E4%B8%81)
-  - [I2C Patching](https://www.penghubingzhou.cn/2019/01/06/VoodooI2C%20DSDT%20Edit/)
 
 
 ### Thanks
