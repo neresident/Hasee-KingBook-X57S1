@@ -17,6 +17,7 @@
  - [x] Headphone
  - [ ] Line-in
  - [ ] HDMI (Video And Audio)
+ - [x] Type-c to HDMI
  - [x] Battery Management
  - [x] Usb (with USB map)
  - [ ] Thunderbolt 3 (did dump from chip)
