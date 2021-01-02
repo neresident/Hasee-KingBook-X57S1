@@ -15,22 +15,23 @@
  - [x] CPU Speedstep (XCPM)
  - [x] [4CH Audio] (2 Front + 2 Bottom speakers + Jack)
  - [x] Headphone
+ - [ ] Line-in
  - [ ] HDMI (Video And Audio)
  - [x] Battery Management
  - [x] Usb (with USB map)
- - [ ] Thunderbolt 3
+ - [ ] Thunderbolt 3 (did dump from chip)
  - [x] Wireless Network (Intel/Broadcom)
  - [x] Bluetooth
- - [x] Keyboard Brightness
+ - [x] Keyboard Brightness (OOTB)
  - [x] Fn Brightness Keys (thanks to [zhen-zen] for YogaSMC)
  - [x] Power Button = PWRB (thanks to [zhen-zen] for YogaSMC)
- - [x] I2C Touchpad (GPIO Mode) (thanks to [ben9923], [zhen-zen])
- - [x] Sleep/wake from LID (not stable)
+ - [x] I2C Touchpad (GPIO Mode) (thanks to [ben9923], [zhen-zen]) // Still not working after sleep
+ - [x] Sleep/wake from LID (fixed now, thanks for SSDT to [kasti0])
  - [x] Sleep from SLPB (Fn+Esc)
  - [ ] Wake Up (Usb Device)
  - [x] Wake Up (PS/2 Keyboard) (Big Thanks to [m0d16l14n1])
  - [x] WebCam (OOTB)
- - [x] SDHC CardReader (OOTB)
+ - [x] SDHC CardReader (OOTB // Actually not mounting cards in system)
 
 
 ### How To Use
@@ -78,3 +79,4 @@
 [acidanthera]: <https://github.com/acidanthera>
 [dortania]: <https://github.com/dortania>
 [0xFireWolf]: <https://github.com/0xFireWolf>
+[kasti0]: <https://github.com/kasti0>
