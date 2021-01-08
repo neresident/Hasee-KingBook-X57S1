@@ -7,6 +7,8 @@
  - Realtek ALC256
  - Intel(R) Wi-Fi 6 AX201 160MHz / Working with BCM94360NG currently (requires kext to get full 5Ghz speeds)
  - BOEhydis NV156FHM-N61 [15.6" LCD]
+ - HTIX5228 Touchpad
+ - ThunderBolt 3
  - [Geekbench Score] / [OpenCL Score] / [Metal Score]
 
 ---
@@ -26,7 +28,7 @@
  - [x] Keyboard Brightness (OOTB)
  - [x] Fn Brightness Keys (thanks to [zhen-zen] for YogaSMC)
  - [x] Power Button = PWRB (thanks to [zhen-zen] for YogaSMC)
- - [x] I2C Touchpad (GPIO Mode) (thanks to [ben9923], [zhen-zen]) // Still not working after sleep
+ - [x] Fully working I2C Touchpad (GPIO Interrupt) (thanks to for GDPI patch and consulting - [ben9923], for patch in VoodooI2CHID - [zhen-zen]) //
  - [x] Sleep/wake from LID (fixed now, thanks for SSDT to [kasti0])
  - [x] Sleep from SLPB (Fn+Esc)
  - [ ] Wake Up (Usb Device)
