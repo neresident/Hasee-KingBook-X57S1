@@ -8,14 +8,14 @@
  - Intel(R) Wi-Fi 6 AX201 160MHz / Working with BCM94360NG currently (requires kext to get full 5Ghz speeds)
  - BOEhydis NV156FHM-N61 [15.6" LCD]
  - HTIX5228 Touchpad
- - ThunderBolt 3
+ - 1 x Thunderbolt 3 Port
  - [Geekbench Score] / [OpenCL Score] / [Metal Score]
 
 ---
 
 ### Functionality
  - [x] CPU Speedstep (XCPM)
- - [x] [4CH Audio] (2 Front + 2 Bottom speakers + Jack)
+ - [x] 4CH Audio (2 Front + 2 Bottom speakers + Jack)
  - [x] Headphone
  - [ ] Line-in
  - [ ] HDMI (Video And Audio)
@@ -34,7 +34,7 @@
  - [ ] Wake Up (Usb Device)
  - [x] Wake Up (PS/2 Keyboard) (Big Thanks to [m0d16l14n1])
  - [x] WebCam (OOTB)
- - [x] SDHC CardReader (OOTB // Actually not mounting cards in system)
+ - [ ] SDHC CardReader (Not mounting cards in system)
 
 
 ### How To Use
@@ -56,10 +56,15 @@
 ### Thanks
 * To all of [acidanthera] and [dortania] team members for all of their kexts/guides and etc 
 * Collaborateur [m0d16l14n1]
-* I2C Touchpad Helper [ben9923] & [zhen-zen]
+* All VoodooI2C developers, especially [ben9923] & [zhen-zen] for fixes and helping to get touchpad working
 * [OC-little]
 * AppleALC patch for Ice Lake and help [fewtarius] 
 * [0xFireWolf] for multiple Ice Lake fixes
+* [kasti0] for LID fix for his Lenovo, which is worked for my laptop
+* AppleLife forum 
+* PCBeta forum
+* Discord "Hackintosh Paradise" 
+* Apple
 
 [Geekbench Score]:<https://browser.geekbench.com/v5/cpu/3534153>
 [OpenCL Score]:<https://browser.geekbench.com/v5/compute/1430453>
