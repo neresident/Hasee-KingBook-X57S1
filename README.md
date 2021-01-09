@@ -1,6 +1,9 @@
-# Haskintosh for Hasee KingBook X57S1
+## Haskintosh for Hasee KingBook X57S1
 
- - OpenCore
+ - Bootloader: OpenCore, currently 0.6.6 version
+ 
+### Some details about laptop
+
  - Intel Core i7-1065G7
  - Hasee HINS02   ( Intel 495 Series Chipset, Intel Ice Point-LP, Intel Ice Lake-U )
  - Memory 16 GB DDR4-2666 (8 GB x 2, upgradable) 
