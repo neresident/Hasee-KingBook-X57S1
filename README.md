@@ -31,11 +31,11 @@
  - [x] Keyboard Brightness (OOTB)
  - [x] Fn Brightness Keys (thanks to [zhen-zen] for YogaSMC)
  - [x] Power Button = PWRB (thanks to [zhen-zen] for YogaSMC)
- - [x] Fully working I2C Touchpad (GPIO Interrupt) (thanks to for GDPI patch and consulting - [ben9923], for patch in VoodooI2CHID - [zhen-zen]) //
+ - [x] Fully working I2C Touchpad (GPIO Interrupt) (thanks to for GDPI patch and consulting - [ben9923], for patch in VoodooI2CHID - [zhen-zen], [ben9923])
  - [x] Sleep/wake from LID (fixed now, thanks for SSDT to [kasti0])
  - [x] Sleep from SLPB (Fn+Esc)
  - [ ] Wake Up (Usb Device)
- - [x] Wake Up (PS/2 Keyboard) (Big Thanks to [m0d16l14n1])
+ - [x] Wake Up (PS/2 Keyboard)
  - [x] WebCam (OOTB)
  - [ ] SDHC CardReader (Not mounting cards in system)
 
