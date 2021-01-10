@@ -72,7 +72,7 @@ Line-in - still trying to fix that issue with creating own resources for [AppleA
 * [fewtarius] for AppleALC patch for Ice Lake and help
 * [0xFireWolf] for multiple Ice Lake fixes
 * [kasti0] for LID fix for his Lenovo, which is worked for my laptop
-* [AppleLife] forum - [link to my topic]
+* [AppleLife] forum - [link to my topic] (Russian forum)
 * PCBeta forum
 * Discord "Hackintosh Paradise" 
 * Apple
