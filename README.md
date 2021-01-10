@@ -5,9 +5,10 @@
 ### Some details about laptop
 
  - Intel Core i7-1065G7
- - Hasee HINS02   ( Intel 495 Series Chipset, Intel Ice Point-LP, Intel Ice Lake-U )
- - Memory 16 GB DDR4-2666 (8 GB x 2, upgradable) 
- - Realtek ALC256
+ - Hasee HINS02 (Intel 495 Series Chipset, Intel Ice Point-LP, Intel Ice Lake-U)
+ - Memory 16 GB DDR4-2666 (8 GB x 2, upgradable, Crucial)
+ - 1TB NVme Crucial
+ - Realtek ALC256 (2 front and 2 bottom speakers + headphones + internal mic in webcam + jack mic) 
  - Intel(R) Wi-Fi 6 AX201 160MHz / Working with BCM94360NG currently (requires kext to get full 5Ghz speeds)
  - BOEhydis NV156FHM-N61 [15.6" LCD]
  - HTIX5228 Touchpad
@@ -17,54 +18,62 @@
 ---
 
 ### Functionality
+
  - [x] CPU Speedstep (XCPM)
- - [x] 4CH Audio (2 Front + 2 Bottom speakers + Jack)
+ - [x] Graphics (Intel Iris Plus G7)
+ - [x] Audio (Speakers + headphones)
  - [x] Headphone
- - [ ] Line-in
- - [ ] HDMI (Video And Audio)
  - [x] Type-C to HDMI
  - [x] Battery Management
- - [x] Usb (with USB map)
- - [ ] Thunderbolt 3 (did dump from chip)
+ - [x] USB (with USB map)
  - [x] Wireless Network (Intel/Broadcom)
- - [x] Bluetooth
+ - [x] Bluetooth (Intel/Broadcom)
  - [x] Keyboard Brightness (OOTB)
  - [x] Fn Brightness Keys (thanks to [zhen-zen] for YogaSMC)
  - [x] Power Button = PWRB (thanks to [zhen-zen] for YogaSMC)
- - [x] Fully working I2C Touchpad (GPIO Interrupt) (thanks to for GDPI patch and consulting - [ben9923], for patch in VoodooI2CHID - [zhen-zen], [ben9923])
+ - [x] Fully working I2C Touchpad (GPIO Interrupt) (thanks to for GDPI patch and consulting - [ben9923], [for patch in VoodooI2CHID] - [zhen-zen], [ben9923])
  - [x] Sleep/wake from LID (fixed now, thanks for SSDT to [kasti0])
  - [x] Sleep from SLPB (Fn+Esc)
- - [ ] Wake Up (Usb Device)
  - [x] Wake Up (PS/2 Keyboard)
  - [x] WebCam (OOTB)
- - [ ] SDHC CardReader (Not mounting cards in system)
 
+### Not working / Glitching / Bugging
 
-### How To Use
- 1. Copy EFI folder to ESP/EFI Partition in bootable USB flash drive.
- 2. Install Mac OS X.
- 3. Copy EFI folder to ESP/EFI Partition in HDD/SSD disk.
- 5. [Modify BIOS For Advanced Setting] (Possible Collapse BIOS, IF YOU NOT DO IT RIGHT)
- 6. Disable CFG Lock, Change DVMT to 128MB, And Disable CFG Fix in config.plist
- 7. If you have any problems with installation - use [dortania] guides
+#### Sound: 
 
-### Tools
-  - [OpenCorePkg]
-  - [Hackintool]
-  - [Maciasl]
-  - [DarwinDumper]
-  - [BootDiskUtility]
+- [ ] Combojack problem: 
+Headphones (won't detect if use them as "one" device with speakers in platform.xml, autoswitch/autodetect not working) // Currently made a build with separating headphones from autoswitch method, working like a separate device with manual switching.
+Line-in - still trying to fix that issue with creating own resources for [AppleALC]
+- [ ] Glitching slider of sound after sleep/first boot. Sound is so quiet, even if you have half of bar. Workaround: manually use slider after sleep in menubar. 
+
+#### Graphics related: 
+
+- [ ] HDMI (Video/Audio) - problem on the Apple's driver side (probably won't be fixed)
+- [ ] HiDPi issues before sleep-wake cycle - glitching-blinking screen while using launchpad/switching/dragging windows and etc. Workaround: put laptop in sleep mode, wake it up - voila. 
+- [ ] Login screen glitch [black screen glitch for 5-7 seconds]
+
+#### Peripherals: 
+
+- [ ] Thunderbolt 3 - only did dump from chip with programmer
+- [ ] SDHC CardReader (USB-based) - not mounting cards in system, not detected at all (working OOTB under Linux/Windows)
+- [ ] Wake-up from USB inserting - actually not need that at all, just to mention.
+
+#### Other
+
+- [ ] Some vendor FnKeys not working (Fn+F1 - switch WiFi; Fn+F7 - LCD/Projector switch; Fn+F12 - switch Num Lk). Others working okay, like key brightness, switch of trackpad, volume and etc.
+- [x] Sleep wasn't working, until it was fixed with "special" boot-arg. You can see all details [here]
 
 
 ### Thanks
+
 * To all of [acidanthera] and [dortania] team members for all of their kexts/guides and etc 
-* Collaborateur [m0d16l14n1]
+* Collaborateurs: [m0d16l14n1], [Ardentwheel]
 * All VoodooI2C developers, especially [ben9923] & [zhen-zen] for fixes and helping to get touchpad working
-* [OC-little]
-* AppleALC patch for Ice Lake and help [fewtarius] 
+* [OC-little] for some patches and guides
+* [fewtarius] for AppleALC patch for Ice Lake and help
 * [0xFireWolf] for multiple Ice Lake fixes
 * [kasti0] for LID fix for his Lenovo, which is worked for my laptop
-* AppleLife forum 
+* [AppleLife] forum - [link to my topic]
 * PCBeta forum
 * Discord "Hackintosh Paradise" 
 * Apple
@@ -73,15 +82,13 @@
 [OpenCL Score]:<https://browser.geekbench.com/v5/compute/1430453>
 [Metal Score]:<https://browser.geekbench.com/v5/compute/1430464>
 
-[OpenCorePkg]: <https://github.com/acidanthera/OpenCorePkg>
-[Hackintool]: <https://github.com/headkaze/Hackintool>
-[Maciasl]: <https://sourceforge.net/projects/maciasl/>
-[DarwinDumper]: <https://bitbucket.org/blackosx/darwindumper>
-[BootDiskUtility]: <http://cvad-mac.narod.ru/>
-
 [Modify BIOS For Advanced Setting]: <https://github.com/Ardentwheel/OpenCore-Hasee-X57S1/tree/master/Tools/BIOS>
-[4CH Audio]: <https://github.com/acidanthera/AppleALC/pull/601>
+[black glitch screen for 5-7 seconds]: <https://github.com/acidanthera/bugtracker/issues/1329>
+[for patch in VoodooI2CHID]: <https://github.com/VoodooI2C/VoodooI2CHID/pull/45>
+[here]: <https://github.com/acidanthera/bugtracker/issues/1207>
+[link to my topic]: <https://applelife.ru/threads/hasee-kingbook-x57s1.2945175/>
 
+[AppleLife]: <https://applelife.ru>
 [ben9923]: <https://github.com/ben9923>
 [m0d16l14n1]: <https://github.com/m0d16l14n1>
 [zhen-zen]: <https://github.com/zhen-zen>
