@@ -22,7 +22,6 @@
  - [x] CPU Speedstep (XCPM)
  - [x] Graphics (Intel Iris Plus G7)
  - [x] Audio (Speakers + headphones)
- - [x] Headphone
  - [x] Type-C to HDMI
  - [x] Battery Management
  - [x] USB (with USB map)
@@ -49,8 +48,8 @@ Line-in - still trying to fix that issue with creating own resources for [AppleA
 #### Graphics related: 
 
 - [ ] HDMI (Video/Audio) - problem on the Apple's driver side (probably won't be fixed)
-- [ ] HiDPi issues before sleep-wake cycle - glitching-blinking screen while using launchpad/switching/dragging windows and etc. Workaround: put laptop in sleep mode, wake it up - voila. 
-- [ ] Login screen glitch [black screen glitch for 5-7 seconds]
+- [ ] HiDPi issues before sleep-wake cycle - glitching-blinking screen while using launchpad/switching/dragging windows and etc. Workaround: put laptop in sleep mode, wake it up - voila. (related to some part of Ice Lake users)
+- [ ] Login screen glitch [black screen glitch for 5-7 seconds] (related to all Ice Lake users)
 
 #### Peripherals: 
 
@@ -91,6 +90,7 @@ Line-in - still trying to fix that issue with creating own resources for [AppleA
 [AppleLife]: <https://applelife.ru>
 [ben9923]: <https://github.com/ben9923>
 [m0d16l14n1]: <https://github.com/m0d16l14n1>
+[Ardentwheel]: <https://github.com/Ardentwheel>
 [zhen-zen]: <https://github.com/zhen-zen>
 [OC-little]: <https://github.com/daliansky/OC-little>
 [fewtarius]: <https://github.com/fewtarius>
