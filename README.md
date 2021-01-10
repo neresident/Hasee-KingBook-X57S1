@@ -49,7 +49,7 @@ Line-in - still trying to fix that issue with creating own resources for [AppleA
 
 - [ ] HDMI (Video/Audio) - problem on the Apple's driver side (probably won't be fixed)
 - [ ] HiDPi issues before sleep-wake cycle - glitching-blinking screen while using launchpad/switching/dragging windows and etc. Workaround: put laptop in sleep mode, wake it up - voila. (related to some part of Ice Lake users)
-- [ ] Login screen glitch [black screen glitch for 5-7 seconds] (related to all Ice Lake users)
+- [ ] Login screen glitch [black glitch screen for 5-7 seconds] (related to all Ice Lake users)
 
 #### Peripherals: 
 
