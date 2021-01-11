@@ -5,9 +5,12 @@
 * Testing ig-platform-ids, except default, which is used by WEG and stable 8A5C0002
 
 8A520000 - unstable sleep/wake - waking to black screen
+
 8A530002 - unstable sleep, sometimes wake to black screen (need to put back in sleep and wake again)
-8A5C0002 - stable sleep, stable wake 
-8A520001 - currently testing
+
+**8A5C0002** - stable sleep, stable wake 
+
+*8A520001* - currently testing
 
 * Trying to get headphones working with auto-detect if you plug them in laptop, trying to get Line-in working also
 
