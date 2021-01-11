@@ -536,7 +536,7 @@
 				<key>model</key>
 				<string>Intel Iris Plus Graphics G7</string>
 				<key>AAPL,ig-platform-id</key>
-				<data>AgBTig==</data>
+				<data>AQBSig==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x7,0x0)</key>
 			<dict>
@@ -1618,7 +1618,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 -igfxmlr -liludbg -wegdbg -igfxblr -igfxmpc igfxonln=1 alcid=18 -igfxcdc -noDC9 msgbuf=1048576</string>
+				<string>-v debug=0x100 keepsyms=1 -igfxmlr -wegdbg -igfxblr -igfxmpc igfxonln=1 alcid=18 -igfxcdc -noDC9 msgbuf=1048576</string>
 				<key>csr-active-config</key>
 				<data>/w8AAA==</data>
 				<key>prev-lang:kbd</key>
