@@ -222,7 +222,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>IgQAeQA=</data>
 				<key>Limit</key>
@@ -248,7 +248,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>IgABeQA=</data>
 				<key>Limit</key>
@@ -274,7 +274,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>IgEAeQA=</data>
 				<key>Limit</key>
@@ -315,19 +315,59 @@
 		<array>
 			<dict>
 				<key>Address</key>
-				<integer>4275159040</integer>
+				<integer>3221225472</integer>
 				<key>Comment</key>
-				<string>Haswell: SB_RCBA is a 0x4 page memory region, containing SPI_BASE at 0x3800 (SPI_BASE_ADDRESS)</string>
+				<string>Test1</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
+			</dict>
+			<dict>
+				<key>Address</key>
+				<integer>4261412864</integer>
+				<key>Comment</key>
+				<string>Test2</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Address</key>
+				<integer>4273995776</integer>
+				<key>Comment</key>
+				<string>Test3</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Address</key>
+				<integer>4275044352</integer>
+				<key>Comment</key>
+				<string>Test4</string>
+				<key>Enabled</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>Address</key>
+				<integer>4276092928</integer>
+				<key>Comment</key>
+				<string>Test5</string>
+				<key>Enabled</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>Address</key>
 				<integer>4278190080</integer>
 				<key>Comment</key>
-				<string>Generic: PCI root is a 0x1000 page memory region used by some types of firmware</string>
+				<string>Test6</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
+			</dict>
+			<dict>
+				<key>Address</key>
+				<integer>4284481536</integer>
+				<key>Comment</key>
+				<string>Test7Lenovo?</string>
+				<key>Enabled</key>
+				<true/>
 			</dict>
 		</array>
 		<key>Patch</key>
@@ -364,7 +404,7 @@
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
 			<key>DevirtualiseMmio</key>
-			<false/>
+			<true/>
 			<key>DisableSingleUser</key>
 			<false/>
 			<key>DisableVariableWrite</key>
@@ -374,7 +414,7 @@
 			<key>EnableSafeModeSlide</key>
 			<true/>
 			<key>EnableWriteUnprotector</key>
-			<true/>
+			<false/>
 			<key>ForceExitBootServices</key>
 			<false/>
 			<key>ProtectMemoryRegions</key>
@@ -382,19 +422,19 @@
 			<key>ProtectSecureBoot</key>
 			<false/>
 			<key>ProtectUefiServices</key>
-			<false/>
-			<key>ProvideCustomSlide</key>
 			<true/>
+			<key>ProvideCustomSlide</key>
+			<false/>
 			<key>ProvideMaxSlide</key>
 			<integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
-			<false/>
-			<key>SetupVirtualMap</key>
 			<true/>
+			<key>SetupVirtualMap</key>
+			<false/>
 			<key>SignalAppleOS</key>
 			<false/>
 			<key>SyncRuntimePermissions</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
@@ -533,10 +573,8 @@
 			<dict>
 				<key>igfxfw</key>
 				<data>AgAAAA==</data>
-				<key>model</key>
-				<string>Intel Iris Plus Graphics G7</string>
 				<key>AAPL,ig-platform-id</key>
-				<data>AQBSig==</data>
+				<data>AgBcig==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x7,0x0)</key>
 			<dict>
@@ -1618,9 +1656,9 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 -igfxmlr -wegdbg -igfxblr -igfxmpc igfxonln=1 alcid=18 -igfxcdc -noDC9 msgbuf=1048576</string>
+				<string>-v debug=0x100 keepsyms=1 -wegdbg alcid=18 -noDC9 -igfxcdc msgbuf=1048576</string>
 				<key>csr-active-config</key>
-				<data>/w8AAA==</data>
+				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
 				<data></data>
 				<key>run-efi-updater</key>
@@ -1704,6 +1742,8 @@
 			<string>FVFCVXZHMNHP</string>
 			<key>SystemUUID</key>
 			<string>2E161274-21D3-4A9C-8409-C6255593412A</string>
+			<key>MaxBIOSVersion</key>
+			<true/>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1754,11 +1794,11 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>HfsPlus.efi</string>
 			<string>OpenRuntime.efi</string>
 			<string>AudioDxe.efi</string>
 			<string>CrScreenshotDxe.efi</string>
 			<string>OpenCanopy.efi</string>
+			<string>OpenHfsPlus.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
