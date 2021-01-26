@@ -1,5 +1,9 @@
 ## Haskintosh for Hasee KingBook X57S1
 
+Ice Lake owners chat
+
+[![Gitter](https://badges.gitter.im/ICE-LAKE-HACKINTOSH-DEVELOPMENT/community.svg)](https://gitter.im/ICE-LAKE-HACKINTOSH-DEVELOPMENT/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
  - Bootloader: OpenCore, currently 0.6.6 version
  
 ### Some details about laptop
