@@ -25,7 +25,7 @@ Ice Lake owners chat
 
  - [x] CPU Speedstep (XCPM)
  - [x] Graphics (Intel Iris Plus G7)
- - [x] Audio (Speakers + headphones)
+ - [x] Audio (Speakers + headphones // auto-switch to headphones after plugging them working right now. Thanks to [agasecond] for fixing that)
  - [x] Type-C to HDMI
  - [x] Battery Management
  - [x] USB (with USB map)
@@ -44,10 +44,7 @@ Ice Lake owners chat
 
 #### Sound: 
 
-- [ ] Combojack problem: 
-Headphones (won't detect if use them as "one" device with speakers in platform.xml, autoswitch/autodetect not working) // Currently made a build with separating headphones from autoswitch method, working like a separate device with manual switching.
-Line-in - still trying to fix that issue with creating own resources for [AppleALC]
-- [ ] Glitching slider of sound after sleep/first boot. Sound is so quiet, even if you have half of bar. Workaround: manually use slider after sleep in menubar. 
+- [ ] Combojack problem: Jack mic is not working (Line-in) - still trying to fix that issue with creating own resources for [AppleALC] with [agasecond]
 
 #### Graphics related: 
 
@@ -64,7 +61,6 @@ Line-in - still trying to fix that issue with creating own resources for [AppleA
 #### Other
 
 - [ ] Some vendor FnKeys not working (Fn+F1 - switch WiFi; Fn+F7 - LCD/Projector switch; Fn+F12 - switch Num Lk). Others working okay, like key brightness, switch of trackpad, volume and etc.
-- [x] Sleep wasn't working, until it was fixed with "special" boot-arg. You can see all details [here]
 
 
 ### Thanks
@@ -102,3 +98,4 @@ Line-in - still trying to fix that issue with creating own resources for [AppleA
 [dortania]: <https://github.com/dortania>
 [0xFireWolf]: <https://github.com/0xFireWolf>
 [kasti0]: <https://github.com/kasti0>
+[agasecond]: <https://github.com/agasecond>
