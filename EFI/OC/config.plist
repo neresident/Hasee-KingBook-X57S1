@@ -48,14 +48,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-TPD.aml</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-TPD.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SSDT-LID.aml</string>
 				<key>Enabled</key>
 				<true/>
@@ -77,6 +69,22 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-SBUS-MCHC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-HPET.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-HPET.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-OSYS.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-OSYS.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -574,7 +582,7 @@
 				<key>igfxfw</key>
 				<data>AgAAAA==</data>
 				<key>AAPL,ig-platform-id</key>
-				<data>AgBcig==</data>
+				<data>AgBRig==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x7,0x0)</key>
 			<dict>
@@ -1644,7 +1652,7 @@
 				<key>DefaultBackgroundColor</key>
 				<data>AAAAAA==</data>
 				<key>UIScale</key>
-				<data>AQ==</data>
+				<data>Ag==</data>
 			</dict>
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<dict>
@@ -1656,7 +1664,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 -wegdbg alcid=18 -noDC9 -igfxcdc msgbuf=1048576</string>
+				<string>-v debug=0x100 keepsyms=1 igfxonln=1 igfxagdc agdpmod=vit9696 -igfxmpc -alcdbg alcverbs=1 alcid=70 -noDC9 -igfxcdc msgbuf=1048576</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
