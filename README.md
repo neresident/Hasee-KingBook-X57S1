@@ -25,7 +25,7 @@ Ice Lake owners chat
 
  - [x] CPU Speedstep (XCPM)
  - [x] Graphics (Intel Iris Plus G7)
- - [x] Audio (Speakers + headphones // auto-switch to headphones after plugging them working right now. Thanks to [agasecond] for fixing that)
+ - [x] Audio (Speakers + headphones // auto-switch to headphones after plugging them working right now. Also audio is working after shutdown or reboot from Windows. Thanks to [agasecond] for fixing that)
  - [x] Type-C to HDMI
  - [x] Battery Management
  - [x] USB (with USB map)
@@ -54,13 +54,14 @@ Ice Lake owners chat
 
 #### Peripherals: 
 
-- [ ] Thunderbolt 3 - only did dump from chip with programmer
+- [ ] Thunderbolt 3 - only did dump from chip with programmer, 
 - [ ] SDHC CardReader (USB-based) - not mounting cards in system, not detected at all (working OOTB under Linux/Windows)
 - [ ] Wake-up from USB inserting - actually not need that at all, just to mention.
 
 #### Other
 
 - [ ] Some vendor FnKeys not working (Fn+F1 - switch WiFi; Fn+F7 - LCD/Projector switch; Fn+F12 - switch Num Lk). Others working okay, like key brightness, switch of trackpad, volume and etc.
+- [ ] Touchpad not working after hot reboot from Windows/Linux - you need to shutdown and boot to macOS to get it working
 
 
 ### Thanks
@@ -70,8 +71,9 @@ Ice Lake owners chat
 * All VoodooI2C developers, especially [ben9923] & [zhen-zen] for fixes and helping to get touchpad working
 * [OC-little] for some patches and guides
 * [fewtarius] for AppleALC patch for Ice Lake and help
+* [agasecond] for fixing headphones switching/sound working after reboot/shutdown from Windows
 * [0xFireWolf] for multiple Ice Lake fixes
-* [kasti0] for LID fix for his Lenovo, which is worked for my laptop
+* [kasti0] for LID fix for his Lenovo, which helped me to make my lid work like it should with a small change (lid state)
 * [AppleLife] forum - [link to my topic] (Russian forum)
 * PCBeta forum
 * Discord "Hackintosh Paradise" 
@@ -99,3 +101,4 @@ Ice Lake owners chat
 [0xFireWolf]: <https://github.com/0xFireWolf>
 [kasti0]: <https://github.com/kasti0>
 [agasecond]: <https://github.com/agasecond>
+[AppleALC]: <https://github.com/acidanthera/AppleALC>
