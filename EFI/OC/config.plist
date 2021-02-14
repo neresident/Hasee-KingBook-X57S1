@@ -437,14 +437,6 @@
 				<key>Enabled</key>
 				<false/>
 			</dict>
-			<dict>
-				<key>Address</key>
-				<integer>4284481536</integer>
-				<key>Comment</key>
-				<string>Test7Lenovo?</string>
-				<key>Enabled</key>
-				<false/>
-			</dict>
 		</array>
 		<key>Patch</key>
 		<array>
