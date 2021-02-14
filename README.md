@@ -61,7 +61,7 @@ Ice Lake owners chat
 #### Other
 
 - [ ] Some vendor FnKeys not working (Fn+F1 - switch WiFi; Fn+F7 - LCD/Projector switch; Fn+F12 - switch Num Lk). Others working okay, like key brightness, switch of trackpad, volume and etc.
-- [ ] Touchpad not working after hot reboot from Windows/Linux - you need to shutdown and boot to macOS to get it working
+- [x] Touchpad is not working after hot reboot from Windows/Linux - you need to shutdown and boot to macOS to get it working. [Details about fix]
 
 
 ### Thanks
@@ -88,6 +88,7 @@ Ice Lake owners chat
 [for patch in VoodooI2CHID]: <https://github.com/VoodooI2C/VoodooI2CHID/pull/45>
 [here]: <https://github.com/acidanthera/bugtracker/issues/1207>
 [link to my topic]: <https://applelife.ru/threads/hasee-kingbook-x57s1.2945175/>
+[Details about fix]: <https://github.com/VoodooI2C/VoodooI2C/issues/442>
 
 [AppleLife]: <https://applelife.ru>
 [ben9923]: <https://github.com/ben9923>
