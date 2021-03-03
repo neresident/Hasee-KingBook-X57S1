@@ -49,7 +49,7 @@ Ice Lake owners chat
 #### Graphics related: 
 
 - [ ] HDMI (Video/Audio) - problem on the Apple's driver side (probably won't be fixed)
-- [x] HiDPi issues before sleep-wake cycle - glitching-blinking screen while using launchpad/switching/dragging windows and etc. Workaround: put laptop in sleep mode, wake it up - voila. (related to some part of Ice Lake users) > Fixed via injecting values from that [plist](https://github.com/khronokernel/DarwinDumped/blob/master/MacBookAir/MacBookAir9%2C1(2)/Device%20Properties/device-properties.plist) file (from real MacBook Air). Thanks to [khronokernel](https://github.com/khronokernel)
+- [x] HiDPi issues before sleep-wake cycle - glitching-blinking screen while using launchpad/switching/dragging windows and etc. Workaround: put laptop in sleep mode, wake it up - voila. (related to some part of Ice Lake users) > Fixed via injecting values from that [plist](https://github.com/khronokernel/DarwinDumped/blob/master/MacBookAir/MacBookAir9%2C1(2)/Device%20Properties/device-properties.plist) file (from real MacBook Air). Thanks to [Applelife topic](https://applelife.ru/threads/dampy-originalnyx-makov.2943712/) AND (especially to member of forum - RV_ABZ), [khronokernel](https://github.com/khronokernel)
 - [ ] Login screen glitch [black glitch screen for 5-7 seconds] (related to all Ice Lake users)
 
 #### Peripherals: 
