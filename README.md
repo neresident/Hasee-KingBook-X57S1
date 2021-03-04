@@ -63,16 +63,24 @@
 
 #### Some info
 
-- Intel(R) ME code versions:
+Intel(R) ME code versions:
+
     BIOS Version                           IN1V105
+    
     Vendor ID                              8086
+    
     FW Version                             13.0.40.1738 LP Consumer
 
-- IUPs Information
+IUPs Information
+
     PMC FW Version                         130.1.30.1051
+    
     IOM FW Version                         4.15.0.0000
+    
     NPHY FW Version                        9.0.1.0006
+    
     TBT FW Version                         13.0.0.7501
+    
     PCHC FW Version                        13.0.0.1005
 
 ### Thanks
