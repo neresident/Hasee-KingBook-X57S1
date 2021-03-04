@@ -1,8 +1,6 @@
 ## Haskintosh for Hasee KingBook X57S1
 
-Ice Lake owners chat
-
-[![Gitter](https://badges.gitter.im/ICE-LAKE-HACKINTOSH-DEVELOPMENT/community.svg)](https://gitter.im/ICE-LAKE-HACKINTOSH-DEVELOPMENT/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[Ice Lake owners chat](https://gitter.im/ICE-LAKE-HACKINTOSH-DEVELOPMENT/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
  - Bootloader: OpenCore, currently 0.6.7 version
  
@@ -63,6 +61,19 @@ Ice Lake owners chat
 - [ ] Some vendor FnKeys not working (Fn+F1 - switch WiFi; Fn+F7 - LCD/Projector switch; Fn+F12 - switch Num Lk). Others working okay, like key brightness, switch of trackpad, volume and etc.
 - [x] Touchpad is not working after hot reboot from Windows/Linux - you need to shutdown and boot to macOS to get it working. [Details about fix]
 
+#### Some info
+
+- Intel(R) ME code versions:
+    BIOS Version                           IN1V105
+    Vendor ID                              8086
+    FW Version                             13.0.40.1738 LP Consumer
+
+- IUPs Information
+    PMC FW Version                         130.1.30.1051
+    IOM FW Version                         4.15.0.0000
+    NPHY FW Version                        9.0.1.0006
+    TBT FW Version                         13.0.0.7501
+    PCHC FW Version                        13.0.0.1005
 
 ### Thanks
 
