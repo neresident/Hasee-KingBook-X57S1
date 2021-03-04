@@ -1,7 +1,0 @@
-2021-01-11 21:45:39.12 kernel[0]: (AppleIntelICLLPGraphicsFramebuffer) [IGFB][LOG  ][DISPLAY   ] hwEnableUnderrunInterrupts: Enabling underrun interrupts
-2021-01-11 21:45:40.12 kernel[0]: (AppleIntelICLLPGraphicsFramebuffer) [IGFB][LOG  ][DISPLAY   ] hwEnableUnderrunInterrupts: Enabling underrun interrupts
-2021-01-11 21:45:41.60 kernel[0]: (AppleIntelICLLPGraphicsFramebuffer) [IGFB][LOG  ][DISPLAY   ] hwEnableUnderrunInterrupts: Enabling underrun interrupts
-2021-01-11 21:45:42.66 kernel[0]: (AppleIntelICLLPGraphicsFramebuffer) [IGFB][LOG  ][DISPLAY   ] hwEnableUnderrunInterrupts: Enabling underrun interrupts
-2021-01-11 21:45:44.16 kernel[0]: (AppleIntelICLLPGraphicsFramebuffer) [IGFB][LOG  ][DISPLAY   ] hwEnableUnderrunInterrupts: Enabling underrun interrupts
-2021-01-11 21:45:46.48 kernel[0]: (AppleIntelICLLPGraphicsFramebuffer) [IGFB][LOG  ][DISPLAY   ] hwEnableUnderrunInterrupts: Enabling underrun interrupts
-2021-01-11 21:45:48.28 kernel[0]: (AppleIntelICLLPGraphicsFramebuffer) [IGFB][LOG  ][DISPLAY   ] hwEnableUnderrunInterrupts: Enabling underrun interrupts
