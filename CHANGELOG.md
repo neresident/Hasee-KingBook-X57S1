@@ -37,4 +37,29 @@ Updated to Big Sur 11.3 Beta 1
 
 * Touchpad is not working after hot reboot from Windows / But working if you do shutdown from Windows
 
-* To get FAN sensor working (not FAN managemeng, just the sensor itself)
+* To get FAN sensor working (not FAN managament, just the sensor itself)
+
+
+### 4 March 
+
+Updated to Big Sur 11.2.1 (reverted from beta)
+
+#### Fixes:
+
+* HiDPI glitching and blinking problem finally fixed (details are in readme file)
+
+* Updated kexts/OC
+
+* Finally, thanks to that dumps from original MacBook Air (that's about fixing HiDPI too), i have found the most stable ig-platform
+
+* Touchpad is working after hot reboots from any OSes (details are in readme file)
+
+* Fully fixed sleep issues
+
+#### WIP
+
+* Line-in (still using pre-built version of AppleALC)
+
+* Fan sensor
+
+* Thunderbolt 3 
