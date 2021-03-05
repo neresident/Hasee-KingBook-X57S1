@@ -38,7 +38,7 @@
  - [x] Wake Up (PS/2 Keyboard)
  - [x] WebCam (OOTB)
 
-### Not working / Glitching / Bugging
+### Not working / Glitching / Bugging / WIP
 
 #### Sound: 
 
