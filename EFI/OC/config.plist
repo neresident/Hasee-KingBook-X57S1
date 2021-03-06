@@ -353,7 +353,7 @@
 				<key>Comment</key>
 				<string>Test1</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 			</dict>
 			<dict>
 				<key>Address</key>
@@ -361,7 +361,7 @@
 				<key>Comment</key>
 				<string>Test2</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 			</dict>
 			<dict>
 				<key>Address</key>
@@ -369,7 +369,7 @@
 				<key>Comment</key>
 				<string>Test3</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 			</dict>
 			<dict>
 				<key>Address</key>
@@ -377,7 +377,7 @@
 				<key>Comment</key>
 				<string>Test4</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 			</dict>
 			<dict>
 				<key>Address</key>
@@ -385,7 +385,7 @@
 				<key>Comment</key>
 				<string>Test5</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 			</dict>
 			<dict>
 				<key>Address</key>
@@ -393,7 +393,7 @@
 				<key>Comment</key>
 				<string>Test6</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 			</dict>
 		</array>
 		<key>Patch</key>
@@ -609,8 +609,6 @@
 				<data>AQAAAA==</data>
 				<key>AAPL,GfxYTile</key>
 				<data>AQAAAA==</data>
-				<key>GraphicsDisplaySetup</key>
-				<data>AAABAAAAAAAEAAAAjAoAAAEAAAAAAAEAAAADAAAAkGyKDwAAAAAACgAAQAYAAFAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAAgAAAAgAAAAASAAAAAIAAAAAAABAAEAAAAAAAEAAAAEAAAAAAAAAQEAAAAAAAAAAABACwAACAcAAAAtAAABAAAAAAAAAAA=</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x7,0x0)</key>
 			<dict>
@@ -1568,7 +1566,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 alcverbs=1 -noDC9 msgbuf=1048576</string>
+				<string>-v debug=0x100 keepsyms=1 -wegdbg -igfxfbdump dc6config=3 alcverbs=1 -noDC9 msgbuf=1048576</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
