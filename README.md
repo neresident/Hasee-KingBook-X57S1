@@ -2,18 +2,19 @@
 
 [Ice Lake owners chat](https://gitter.im/ICE-LAKE-HACKINTOSH-DEVELOPMENT/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
- - Bootloader: OpenCore, currently 0.6.7 version
+ - Bootloader: OpenCore, currently 0.6.8 version
+ - macOS: currently using Big Sur 11.4 Beta 1
  
 ### Some details about laptop
 
  - Intel Core i7-1065G7
  - Hasee HINS02 (Intel 495 Series Chipset, Intel Ice Point-LP, Intel Ice Lake-U)
  - Memory 16 GB DDR4-2666 (8 GB x 2, upgradable, Crucial)
- - 1TB NVme Crucial
+ - 1TB NVME Crucial
  - Realtek ALC256 (2 front and 2 bottom speakers + headphones + internal mic in webcam + jack mic) 
  - Intel(R) Wi-Fi 6 AX201 160MHz / Working with BCM94360NG currently (requires kext to get full 5Ghz speeds)
  - BOEhydis NV156FHM-N61 [15.6" LCD]
- - HTIX5228 Touchpad
+ - HTIX5228 Touchpad / known as fake "SYN3602"/"ALPS0001"
  - 1 x Thunderbolt 3 Port
  - [Geekbench Score] / [OpenCL Score] / [Metal Score]
 
@@ -24,7 +25,7 @@
  - [x] CPU Speedstep (XCPM)
  - [x] Graphics (Intel Iris Plus G7)
  - [x] Audio (Speakers + headphones // auto-switch to headphones after plugging them working right now. Also audio is working after shutdown or reboot from Windows. Thanks to [agasecond] for fixing that)
- - [x] Type-C to HDMI
+ - [x] Type-C to HDMI (currently no sound)
  - [x] Battery Management
  - [x] USB (with USB map)
  - [x] Wireless Network (Intel/Broadcom)
@@ -47,19 +48,19 @@
 #### Graphics related: 
 
 - [ ] HDMI (Video/Audio) - problem on the Apple's driver side (probably won't be fixed)
-- [x] HiDPi issues before sleep-wake cycle - glitching-blinking screen while using launchpad/switching/dragging windows and etc. Workaround: put laptop in sleep mode, wake it up - voila. (related to some part of Ice Lake users) > Fixed via injecting value (AAPL,GfxYTile) from that [plist](https://github.com/khronokernel/DarwinDumped/blob/master/MacBookAir/MacBookAir9%2C1(2)/Device%20Properties/device-properties.plist) file (from real MacBook Air). Thanks to [Applelife topic](https://applelife.ru/threads/dampy-originalnyx-makov.2943712/) AND (especially to member of forum - RV_ABZ), [khronokernel](https://github.com/khronokernel)
-- [ ] Login screen glitch [black glitch screen for 5-7 seconds] (related to all Ice Lake users)
+- [x] HiDPi issues before sleep-wake cycle - glitching-blinking screen while using launchpad/switching/dragging windows and etc. > Fixed via injecting value (AAPL,GfxYTile) from that [plist](https://github.com/khronokernel/DarwinDumped/blob/master/MacBookAir/MacBookAir9%2C1(2)/Device%20Properties/device-properties.plist) file (from real MacBook Air / MacBook Pro). Thanks to [Applelife topic](https://applelife.ru/threads/dampy-originalnyx-makov.2943712/) AND (especially to member of forum - RV_ABZ), [khronokernel](https://github.com/khronokernel)
+- [ ] Login screen glitch [black glitch screen for 5-7 seconds] or any other screen corruption (related to all Ice Lake hackintoshes)
 
 #### Peripherals: 
 
-- [ ] Thunderbolt 3 - only did dump from chip with programmer, 
-- [ ] SDHC CardReader (USB-based) - not mounting cards in system, not detected at all (working OOTB under Linux/Windows)
+- [ ] Thunderbolt 3 - only did dump from chip with programmer (i didn't test it myself, but it seems to be working with eGPU, without Hotplug support, result was reported by [kingo132]
+- [ ] MicroSD CardReader (USB based Realtek) - not mounting cards in system, not detected at all (working OOTB under Linux/Windows)
 - [ ] Wake-up from USB inserting - actually not need that at all, just to mention.
 
 #### Other
 
 - [ ] Some vendor FnKeys not working (Fn+F1 - switch WiFi; Fn+F7 - LCD/Projector switch; Fn+F12 - switch Num Lk). Others working okay, like key brightness, switch of trackpad, volume and etc.
-- [x] Touchpad is not working after hot reboot from Windows/Linux - you need to shutdown and boot to macOS to get it working. [Details about fix]
+- [x] Touchpad is not working after hot reboot from Windows/Linux - you need to shutdown and boot to macOS to get it working. Touchpad required ACPI patch (GPIO) + codeless kext or ACPI patch to change name of touchpad to SYN3602 (fixed reboot from Windows) [Details about fix]
 
 #### Some info
 
@@ -122,3 +123,4 @@ IUPs Information
 [kasti0]: <https://github.com/kasti0>
 [agasecond]: <https://github.com/agasecond>
 [AppleALC]: <https://github.com/acidanthera/AppleALC>
+[kingo132]: <https://github.com/kingo132>
