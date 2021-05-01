@@ -314,7 +314,7 @@
 			<key>ProcessUSBMouseStopsTrackpad</key>
 			<false/>
 			<key>QuietTimeAfterTyping</key>
-			<integer>100</integer>
+			<integer>250</integer>
 			<key>RM,deliverNotifications</key>
 			<true/>
 		</dict>
