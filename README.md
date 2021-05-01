@@ -3,7 +3,7 @@
 [Ice Lake owners chat](https://gitter.im/ICE-LAKE-HACKINTOSH-DEVELOPMENT/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
  - Bootloader: OpenCore, currently 0.6.8 version
- - macOS: currently using Big Sur 11.4 Beta 1
+ - macOS: currently using Big Sur 11.3
  
 ### Some details about laptop
 
