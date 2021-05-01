@@ -61,6 +61,7 @@
 
 - [ ] Some vendor FnKeys not working (Fn+F1 - switch WiFi; Fn+F7 - LCD/Projector switch; Fn+F12 - switch Num Lk). Others working okay, like key brightness, switch of trackpad, volume and etc.
 - [x] Touchpad is not working after hot reboot from Windows/Linux - you need to shutdown and boot to macOS to get it working. Touchpad required ACPI patch (GPIO) + codeless kext or ACPI patch to change name of touchpad to SYN3602 (fixed reboot from Windows) [Details about fix]
+- [ ] Fan RPM are not working. Trying to get it working now with latest changes in SMCSuperIO.kext
 
 #### Some info
 
