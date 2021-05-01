@@ -10,9 +10,9 @@
  - Intel Core i7-1065G7
  - Hasee HINS02 (Intel 495 Series Chipset, Intel Ice Point-LP, Intel Ice Lake-U)
  - Memory 16 GB DDR4-2666 (8 GB x 2, upgradable, Crucial)
- - 1TB NVME Crucial
+ - 1TB NVME Crucial (working good, near 30 degrees or 50 under high load)
  - Realtek ALC256 (2 front and 2 bottom speakers + headphones + internal mic in webcam + jack mic) 
- - Intel(R) Wi-Fi 6 AX201 160MHz / Working with BCM94360NG currently (requires kext to get full 5Ghz speeds)
+ - Intel(R) Wi-Fi 6 AX201 160MHz / I am using BCM94360NG currently (requires kext to get full 5Ghz speeds)
  - BOEhydis NV156FHM-N61 [15.6" LCD]
  - HTIX5228 Touchpad / known as fake "SYN3602"/"ALPS0001"
  - 1 x Thunderbolt 3 Port
@@ -25,8 +25,8 @@
  - [x] CPU Speedstep (XCPM)
  - [x] Graphics (Intel Iris Plus G7)
  - [x] Audio (Speakers + headphones // auto-switch to headphones after plugging them working right now. Also audio is working after shutdown or reboot from Windows. Thanks to [agasecond] for fixing that)
- - [x] Type-C to HDMI (currently no sound)
- - [x] Battery Management
+ - [x] Type-C to HDMI (currently have no sound output)
+ - [x] Battery Management (patching or use ECEnabler)
  - [x] USB (with USB map)
  - [x] Wireless Network (Intel/Broadcom)
  - [x] Bluetooth (Intel/Broadcom)
@@ -38,6 +38,7 @@
  - [x] Sleep from SLPB (Fn+Esc)
  - [x] Wake Up (PS/2 Keyboard)
  - [x] WebCam (OOTB)
+ - [x] NVME powermanagement  
 
 ### Not working / Glitching / Bugging / WIP / Partly working
 
@@ -59,9 +60,9 @@
 
 #### Other
 
-- [ ] Some vendor FnKeys not working (Fn+F1 - switch WiFi; Fn+F7 - LCD/Projector switch; Fn+F12 - switch Num Lk). Others working okay, like key brightness, switch of trackpad, volume and etc.
+- [ ] Some vendor FnKeys are not working (Fn+F1 - switch WiFi; Fn+F7 - LCD/Projector switch; Fn+F12 - switch Num Lk). Others are working okay, like key brightness, switch on-off trackpad, volume and etc.
 - [x] Touchpad is not working after hot reboot from Windows/Linux - you need to shutdown and boot to macOS to get it working. Touchpad required ACPI patch (GPIO) + codeless kext or ACPI patch to change name of touchpad to SYN3602 (fixed reboot from Windows) [Details about fix]
-- [ ] Fan RPM are not working. Trying to get it working now with latest changes in SMCSuperIO.kext
+- [ ] Fan RPM is not working. Trying to get it working now with latest changes in SMCSuperIO.kext
 
 #### Some info
 
