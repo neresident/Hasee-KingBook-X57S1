@@ -1575,7 +1575,7 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>FVF044902GU00001F</string>
+			<string></string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
@@ -1589,9 +1589,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookAir9,1</string>
 			<key>SystemSerialNumber</key>
-			<string>FVFDMBY9MNHP</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>63FFDE7B-2C66-492E-8272-559BDEEF8FEF</string>
+			<string></string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
