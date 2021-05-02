@@ -39,6 +39,7 @@
  - [x] Wake Up (PS/2 Keyboard)
  - [x] WebCam (OOTB)
  - [x] NVME powermanagement  
+ - [x] Thunderbolt 3 Type-C port is working (plug-replug) with latest USB map tool - [USBToolBox]
 
 ### Not working / Glitching / Bugging / WIP / Partly working
 
@@ -126,3 +127,4 @@ IUPs Information
 [agasecond]: <https://github.com/agasecond>
 [AppleALC]: <https://github.com/acidanthera/AppleALC>
 [kingo132]: <https://github.com/kingo132>
+[USBToolBox]: <https://github.com/USBToolBox/tool>
