@@ -39,7 +39,7 @@
  - [x] Wake Up (PS/2 Keyboard)
  - [x] WebCam (OOTB)
  - [x] NVME powermanagement  
- - [x] Thunderbolt 3 Type-C port is working (plug-replug) with latest USB map tool - [USBToolBox]
+ - [x] Thunderbolt 3 USB Type-C port is working (plug-replug) with latest USB map tool - [USBToolBox]. You can now map USB under Windows and the process became much easier
 
 ### Not working / Glitching / Bugging / WIP / Partly working
 
