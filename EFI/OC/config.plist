@@ -965,24 +965,6 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>USBMap.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
 				<string>ECEnabler.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -1008,6 +990,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/SMCSuperIO</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>UTBMap.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
 				<key>Arch</key>
 				<string>Any</string>
 				<key>MaxKernel</key>
@@ -1587,7 +1587,7 @@
 			<key>SystemMemoryStatus</key>
 			<string>Upgradable</string>
 			<key>SystemProductName</key>
-			<string>MacBookAir9,1</string>
+			<string></string>
 			<key>SystemSerialNumber</key>
 			<string></string>
 			<key>SystemUUID</key>
