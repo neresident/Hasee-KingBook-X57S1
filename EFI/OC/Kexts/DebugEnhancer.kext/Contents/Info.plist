@@ -7,17 +7,17 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
-	<string>CpuTscSync</string>
+	<string>DebugEnhancer</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.lvs1974.driver.CpuTscSync</string>
+	<string>as.lvs1974.DebugEnhancer</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>CpuTscSync</string>
+	<string>DebugEnhancer</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.4</string>
+	<string>1.0.3</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,7 +25,7 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.0.4</string>
+	<string>1.0.3</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -44,43 +44,30 @@
 	<string>12D4e</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>CpuTscSync</key>
+		<key>as.lvs1974.DebugEnhancer</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.lvs1974.driver.CpuTscSync</string>
+			<string>as.lvs1974.DebugEnhancer</string>
 			<key>IOClass</key>
-			<string>CpuTscSync</string>
+			<string>DebugEnhancer</string>
 			<key>IOMatchCategory</key>
-			<string>CpuTscSync</string>
+			<string>DebugEnhancer</string>
 			<key>IOProviderClass</key>
 			<string>IOResources</string>
 			<key>IOResourceMatch</key>
 			<string>IOKit</string>
 		</dict>
-		<key>VoodooTSCSync</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>org.lvs1974.driver.CpuTscSync</string>
-			<key>IOClass</key>
-			<string>VoodooTSCSync</string>
-			<key>IOMatchCategory</key>
-			<string>VoodooTSCSync</string>
-			<key>IOProviderClass</key>
-			<string>AppleACPICPU</string>
-		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
 	<string>10.8</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2020 lvs1974. All rights reserved.</string>
+	<string>Copyright © 2019 lvs1974. All rights reserved.</string>
 	<key>OSBundleCompatibleVersion</key>
 	<string>1.0</string>
 	<key>OSBundleLibraries</key>
 	<dict>
 		<key>as.vit9696.Lilu</key>
-		<string>1.2.0</string>
-		<key>com.apple.iokit.IOACPIFamily</key>
-		<string>1.0.0d1</string>
+		<string>1.2.6</string>
 		<key>com.apple.kpi.bsd</key>
 		<string>12.0.0</string>
 		<key>com.apple.kpi.dsep</key>
