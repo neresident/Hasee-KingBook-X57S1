@@ -2,8 +2,8 @@
 
 [Ice Lake owners chat](https://gitter.im/ICE-LAKE-HACKINTOSH-DEVELOPMENT/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
- - Bootloader: OpenCore 0.6.9
- - macOS: Big Sur 11.3.1
+ - Bootloader: OpenCore 0.7.1
+ - macOS: Monterey 12.0 Beta (21A5248p)
  
 ### Some details about laptop
 
@@ -51,7 +51,7 @@
 
 - [ ] HDMI (Video/Audio) - problem on the Apple's driver side (probably won't be fixed)
 - [x] HiDPi issues before sleep-wake cycle - glitching-blinking screen while using launchpad/switching/dragging windows and etc. > Fixed via injecting value (AAPL,GfxYTile) from that [plist](https://github.com/khronokernel/DarwinDumped/blob/master/MacBookAir/MacBookAir9%2C1(2)/Device%20Properties/device-properties.plist) file (from real MacBook Air / MacBook Pro). Thanks to [Applelife topic](https://applelife.ru/threads/dampy-originalnyx-makov.2943712/) AND (especially to member of forum - RV_ABZ), [khronokernel](https://github.com/khronokernel)
-- [ ] Login screen glitch [black glitch screen for 5-7 seconds] or any other screen corruption (related to all Ice Lake hackintoshes)
+- [ ] Login screen glitch [black glitch screen for 5-7 seconds] or any other screen corruption (related to all Ice Lake hackintoshes) // Might be fixed with Monterey update, at least now it has different "symptomatic". 
 
 #### Peripherals: 
 
