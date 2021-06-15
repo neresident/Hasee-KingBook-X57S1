@@ -3,7 +3,7 @@
 [Ice Lake owners chat](https://gitter.im/ICE-LAKE-HACKINTOSH-DEVELOPMENT/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
  - Bootloader: OpenCore 0.7.1
- - macOS: Monterey 12.0 Beta (21A5248p)
+ - macOS: Big Sur 11.4 / Monterey 12.0 Beta
  
 ### Some details about laptop
 
