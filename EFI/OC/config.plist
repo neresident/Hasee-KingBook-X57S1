@@ -385,7 +385,7 @@
 			<key>EnableWriteUnprotector</key>
 			<false/>
 			<key>ForceBooterSignature</key>
-			<true/>
+			<false/>
 			<key>ForceExitBootServices</key>
 			<false/>
 			<key>ProtectMemoryRegions</key>
@@ -960,6 +960,8 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>DebugEnhancer.kext</string>
 				<key>Comment</key>
@@ -968,8 +970,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/DebugEnhancer</string>
-				<key>Arch</key>
-				<string>Any</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1248,13 +1248,13 @@
 			<true/>
 			<key>PowerTimeoutKernelPanic</key>
 			<true/>
+			<key>ProvideCurrentCpuInfo</key>
+			<false/>
 			<key>SetApfsTrimTimeout</key>
 			<integer>429496295</integer>
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
-			<false/>
-			<key>ProvideCurrentCpuInfo</key>
 			<false/>
 		</dict>
 		<key>Scheme</key>
@@ -1330,14 +1330,14 @@
 				<string>Not signed for security reasons</string>
 				<key>Enabled</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>CustomOS</string>
 				<key>Path</key>
 				<string>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/NVMe(0x1,11-22-33-44-55-66-77-88)/HD(1,GPT,00000000-0000-0000-0000-000000000000,0x800,0x64000)/\EFI\BOOT\BOOTX64.EFI</string>
 				<key>TextMode</key>
 				<false/>
-				<key>Flavour</key>
-				<string>Auto</string>
 			</dict>
 		</array>
 		<key>Security</key>
@@ -1346,6 +1346,8 @@
 			<true/>
 			<key>AllowSetDefault</key>
 			<true/>
+			<key>AllowToggleSip</key>
+			<true/>
 			<key>ApECID</key>
 			<integer>0</integer>
 			<key>AuthRestart</key>
@@ -1353,7 +1355,7 @@
 			<key>BlacklistAppleUpdate</key>
 			<true/>
 			<key>DmgLoading</key>
-			<string>Signed</string>
+			<string>Any</string>
 			<key>EnablePassword</key>
 			<false/>
 			<key>ExposeSensitiveData</key>
@@ -1365,13 +1367,11 @@
 			<key>PasswordSalt</key>
 			<data></data>
 			<key>ScanPolicy</key>
-			<integer>17760515</integer>
+			<integer>0</integer>
 			<key>SecureBootModel</key>
 			<string>Disabled</string>
 			<key>Vault</key>
 			<string>Optional</string>
-			<key>AllowToggleSip</key>
-			<true/>
 		</dict>
 		<key>Tools</key>
 		<array>
@@ -1384,6 +1384,8 @@
 				<string>Not signed for security reasons</string>
 				<key>Enabled</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>UEFI Shell</string>
 				<key>Path</key>
@@ -1392,8 +1394,6 @@
 				<false/>
 				<key>TextMode</key>
 				<false/>
-				<key>Flavour</key>
-				<string>Auto</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1404,6 +1404,8 @@
 				<string>Perform shutdown</string>
 				<key>Enabled</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>Shutdown</string>
 				<key>Path</key>
@@ -1412,8 +1414,6 @@
 				<false/>
 				<key>TextMode</key>
 				<false/>
-				<key>Flavour</key>
-				<string>Auto</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1424,6 +1424,8 @@
 				<string>CleanNvram.efi</string>
 				<key>Enabled</key>
 				<false/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>CleanNvram.efi</string>
 				<key>Path</key>
@@ -1432,8 +1434,6 @@
 				<false/>
 				<key>TextMode</key>
 				<false/>
-				<key>Flavour</key>
-				<string>Auto</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1444,6 +1444,8 @@
 				<string>OpenControl.efi</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
 				<key>Name</key>
 				<string>OpenControl.efi</string>
 				<key>Path</key>
@@ -1452,24 +1454,22 @@
 				<false/>
 				<key>TextMode</key>
 				<false/>
-				<key>Flavour</key>
-				<string>Auto</string>
 			</dict>
 			<dict>
-				<key>Name</key>
-				<string>CsrUtil.efi</string>
-				<key>Comment</key>
-				<string>CsrUtil.efi</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>CsrUtil.efi</string>
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
 				<true/>
+				<key>Comment</key>
+				<string>CsrUtil.efi</string>
+				<key>Enabled</key>
+				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
+				<key>Name</key>
+				<string>CsrUtil.efi</string>
+				<key>Path</key>
+				<string>CsrUtil.efi</string>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
@@ -1495,6 +1495,8 @@
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
+				<key>ForceDisplayRotationInEFI</key>
+				<integer>0</integer>
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
@@ -1505,8 +1507,6 @@
 				<data></data>
 				<key>run-efi-updater</key>
 				<string>No</string>
-				<key>ForceDisplayRotationInEFI</key>
-				<integer>0</integer>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1569,9 +1569,9 @@
 		<key>Generic</key>
 		<dict>
 			<key>AdviseFeatures</key>
-			<true/>
+			<false/>
 			<key>MLB</key>
-			<string></string>
+			<string>SET IT YOURSELF</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
@@ -1583,11 +1583,11 @@
 			<key>SystemMemoryStatus</key>
 			<string>Upgradable</string>
 			<key>SystemProductName</key>
-			<string>MacBookAir9,1</string>
+			<string>SET IT YOURSELF</string>
 			<key>SystemSerialNumber</key>
-			<string></string>
+			<string>SET IT YOURSELF</string>
 			<key>SystemUUID</key>
-			<string></string>
+			<string>SET IT YOURSELF</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1611,7 +1611,7 @@
 			<key>HideVerbose</key>
 			<true/>
 			<key>JumpstartHotPlug</key>
-			<false/>
+			<true/>
 			<key>MinDate</key>
 			<integer>0</integer>
 			<key>MinVersion</key>
@@ -1717,6 +1717,8 @@
 			<false/>
 			<key>AppleDebugLog</key>
 			<false/>
+			<key>AppleEg2Info</key>
+			<false/>
 			<key>AppleFramebufferInfo</key>
 			<false/>
 			<key>AppleImageConversion</key>
@@ -1730,7 +1732,7 @@
 			<key>AppleSecureBoot</key>
 			<false/>
 			<key>AppleSmcIo</key>
-			<true/>
+			<false/>
 			<key>AppleUserInterfaceTheme</key>
 			<false/>
 			<key>DataHub</key>
@@ -1745,8 +1747,6 @@
 			<false/>
 			<key>UnicodeCollation</key>
 			<false/>
-			<key>AppleEg2Info</key>
-			<false/>
 		</dict>
 		<key>Quirks</key>
 		<dict>
@@ -1754,23 +1754,23 @@
 			<false/>
 			<key>DisableSecurityPolicy</key>
 			<false/>
+			<key>EnableVectorAcceleration</key>
+			<true/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
+			<key>ForgeUefiSupport</key>
+			<false/>
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
 			<true/>
+			<key>ReloadOptionRoms</key>
+			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
-			<false/>
-			<key>EnableVectorAcceleration</key>
-			<true/>
-			<key>ForgeUefiSupport</key>
-			<false/>
-			<key>ReloadOptionRoms</key>
 			<false/>
 		</dict>
 		<key>ReservedMemory</key>
