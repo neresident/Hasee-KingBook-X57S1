@@ -120,22 +120,7 @@
 			</dict>
 		</array>
 		<key>Delete</key>
-		<array>
-			<dict>
-				<key>All</key>
-				<false/>
-				<key>Comment</key>
-				<string>Delete TBType-C</string>
-				<key>Enabled</key>
-				<false/>
-				<key>OemTableId</key>
-				<data>VGJ0VHlwZUM=</data>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>U1NEVA==</data>
-			</dict>
-		</array>
+		<array/>
 		<key>Patch</key>
 		<array>
 			<dict>
@@ -373,7 +358,7 @@
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
 			<key>DevirtualiseMmio</key>
-			<true/>
+			<false/>
 			<key>DisableSingleUser</key>
 			<false/>
 			<key>DisableVariableWrite</key>
@@ -1018,7 +1003,7 @@
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data></data>
 				<key>Identifier</key>
@@ -1240,6 +1225,8 @@
 			<string>x86_64</string>
 			<key>KernelCache</key>
 			<string>Auto</string>
+			<key>CustomKernel</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>Misc</key>
@@ -1450,6 +1437,26 @@
 				<key>TextMode</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>Name</key>
+				<string>TpmInfo.efi</string>
+				<key>Comment</key>
+				<string>TpmInfo.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>TpmInfo.efi</string>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<true/>
+				<key>Flavour</key>
+				<string>Auto</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
+			</dict>
 		</array>
 	</dict>
 	<key>NVRAM</key>
@@ -1475,7 +1482,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 -wegdbg alcverbs=1 -noDC9</string>
+				<string>debug=0x100 keepsyms=1 -noDC9</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1558,7 +1565,7 @@
 			<key>SystemMemoryStatus</key>
 			<string>Upgradable</string>
 			<key>SystemProductName</key>
-			<string>MacBookAir9,1</string>
+			<string></string>
 			<key>SystemSerialNumber</key>
 			<string></string>
 			<key>SystemUUID</key>
