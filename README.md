@@ -2,8 +2,8 @@
 
 [Ice Lake owners chat](https://gitter.im/ICE-LAKE-HACKINTOSH-DEVELOPMENT/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
- - Bootloader: OpenCore 0.7.1
- - macOS: Big Sur 11.4 / Monterey 12.0 Beta
+ - Bootloader: OpenCore 0.7.2
+ - macOS: Big Sur 11.5.2 / Monterey 12.0 Beta
  
 ### Some details about laptop
 
@@ -12,6 +12,7 @@
  - Memory 16 GB DDR4-2666 (8 GB x 2, upgradable, Crucial)
  - 1TB NVME Crucial (working good, near 30 degrees or 50 under high load)
  - Realtek ALC256 (2 front and 2 bottom speakers + headphones + internal mic in webcam + jack mic) 
+ - Realtek RTS5129 (USB-based card reader)
  - Intel(R) Wi-Fi 6 AX201 160MHz / I am using BCM94360NG currently (requires kext to get full 5Ghz speeds)
  - BOEhydis NV156FHM-N61 [15.6" LCD]
  - HTIX5228 Touchpad / known as fake "SYN3602"/"ALPS0001"
@@ -56,7 +57,7 @@
 #### Peripherals: 
 
 - [ ] Thunderbolt 3 - only did dump from chip with programmer (i didn't test it myself, but it seems to be working with eGPU, without Hotplug support, result was reported by [kingo132]
-- [ ] MicroSD CardReader (USB based Realtek) - not mounting cards in system, not detected at all (working OOTB under Linux/Windows)
+- [x] MicroSD card reader (USB-based Realtek) - not mounting cards in system, not detected at all (working OOTB under Linux/Windows). Currently working with new kext developed by [0xFireWolf] - RealtekCardReader.kext
 - [ ] Wake-up from USB inserting - actually not need that at all, just to mention.
 
 #### Other
@@ -95,7 +96,7 @@ IUPs Information
 * [OC-little] for some patches and guides
 * [fewtarius] for AppleALC patch for Ice Lake and help
 * [agasecond] for fixing headphones switching/sound working after reboot/shutdown from Windows
-* [0xFireWolf] for multiple Ice Lake fixes
+* [0xFireWolf] for multiple Ice Lake graphics fixes, blacklight smooth transition (WEG), driver for Realtek card readers (PCIe/USB-based)
 * [kasti0] for LID fix for his Lenovo, which helped me to make my lid work like it should with a small change (lid state)
 * [AppleLife] forum - [link to my topic] (Russian forum)
 * PCBeta forum
