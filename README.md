@@ -2,7 +2,9 @@
 
 [Ice Lake owners chat](https://gitter.im/ICE-LAKE-HACKINTOSH-DEVELOPMENT/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
- - Bootloader: OpenCore 0.7.2
+[Repo with *ALL* Ice Lake issues/problems/fixes/WA](https://github.com/m0d16l14n1/icelake-hackintosh)
+
+ - Bootloader: OpenCore 0.7.4
  - macOS: Big Sur 11.5.2 / Monterey 12.0 Beta
  
 ### Some details about laptop
@@ -47,12 +49,13 @@
 #### Sound: 
 
 - [ ] Combojack problem: Jack mic is not working (Line-in) - still trying to fix that issue with creating own resources for [AppleALC] with [agasecond]
+- [ ] Audio through Type-C to HDMI dongles is not working
 
 #### Graphics related: 
 
 - [ ] HDMI (Video/Audio) - problem on the Apple's driver side (probably won't be fixed)
 - [x] HiDPi issues before sleep-wake cycle - glitching-blinking screen while using launchpad/switching/dragging windows and etc. > Fixed via injecting value (AAPL,GfxYTile) from that [plist](https://github.com/khronokernel/DarwinDumped/blob/master/MacBookAir/MacBookAir9%2C1(2)/Device%20Properties/device-properties.plist) file (from real MacBook Air / MacBook Pro). Thanks to [Applelife topic](https://applelife.ru/threads/dampy-originalnyx-makov.2943712/) AND (especially to member of forum - [RV_ABZ](https://github.com/RV-ABZ)), [khronokernel](https://github.com/khronokernel)
-- [ ] Login screen glitch [black glitch screen for 5-7 seconds] or any other screen corruption (related to all Ice Lake hackintoshes) // Might be fixed with Monterey update, at least now it has different "symptomatic". 
+- [X] Login screen glitch [black glitch screen for 5-7 seconds] or any other screen corruption (related to all Ice Lake hackintoshes) // Fixex. Details are [here](https://github.com/acidanthera/WhateverGreen/pull/92)
 
 #### Peripherals: 
 
@@ -96,7 +99,8 @@ IUPs Information
 * [OC-little] for some patches and guides
 * [fewtarius] for AppleALC patch for Ice Lake and help
 * [agasecond] for fixing headphones switching/sound working after reboot/shutdown from Windows
-* [0xFireWolf] for multiple Ice Lake graphics fixes, blacklight smooth transition (WEG), driver for Realtek card readers (PCIe/USB-based)
+* [kingo132] for Ice Lake DBuf workaround
+* [0xFireWolf] for multiple Ice Lake graphics fixes (CDCLK/DVMT and DBuf), blacklight smooth transition, driver for Realtek card readers (PCIe/**USB-based**)
 * [kasti0] for LID fix for his Lenovo, which helped me to make my lid work like it should with a small change (lid state)
 * [AppleLife] forum - [link to my topic] (Russian forum)
 * PCBeta forum
