@@ -489,12 +489,12 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>AgBRig==</data>
 				<key>AAPL,GfxYTile</key>
 				<data>AQAAAA==</data>
 				<key>AAPL,Gfx324</key>
 				<data>AQAAAA==</data>
-				<key>AAPL,ig-platform-id</key>
-				<data>AgBRig==</data>
 				<key>enable-backlight-registers-fix</key>
 				<data>AQAAAA==</data>
 				<key>enable-backlight-smoother</key>
@@ -504,6 +504,8 @@
 				<key>backlight-smoother-steps</key>
 				<data>LQAAAA==</data>
 				<key>enable-cdclk-frequency-fix</key>
+				<data>AQAAAA==</data>
+				<key>enable-dbuf-early-optimizer</key>
 				<data>AQAAAA==</data>
 				<key>igfxfw</key>
 				<data>AgAAAA==</data>
@@ -1601,7 +1603,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 -noDC9 -wegdbg -igfxtypec msgbuf=10485760</string>
+				<string>-v debug=0x100 keepsyms=1 -noDC9 -wegdbg msgbuf=10485760</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
