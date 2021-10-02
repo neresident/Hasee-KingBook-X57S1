@@ -55,7 +55,7 @@
 
 - [ ] HDMI (Video/Audio) - problem on the Apple's driver side (probably won't be fixed)
 - [x] HiDPi issues before sleep-wake cycle - glitching-blinking screen while using launchpad/switching/dragging windows and etc. > Fixed via injecting value (AAPL,GfxYTile) from that [plist](https://github.com/khronokernel/DarwinDumped/blob/master/MacBookAir/MacBookAir9%2C1(2)/Device%20Properties/device-properties.plist) file (from real MacBook Air / MacBook Pro). Thanks to [Applelife topic](https://applelife.ru/threads/dampy-originalnyx-makov.2943712/) AND (especially to member of forum - [RV_ABZ](https://github.com/RV-ABZ)), [khronokernel](https://github.com/khronokernel)
-- [X] Login screen glitch [black glitch screen for 5-7 seconds] or any other screen corruption (related to all Ice Lake hackintoshes) // Fixex. Details are [here]()
+- [X] Login screen glitch [black glitch screen for 5-7 seconds] or any other screen corruption (related to all Ice Lake hackintoshes) // Fixex. Details are [here](https://github.com/acidanthera/WhateverGreen/pull/92)
 
 #### Peripherals: 
 
