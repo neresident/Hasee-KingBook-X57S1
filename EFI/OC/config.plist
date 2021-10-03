@@ -1144,7 +1144,7 @@
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data></data>
 				<key>Identifier</key>
@@ -1674,7 +1674,7 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>INSERT-YOURS</string>
+			<string></string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
@@ -1688,9 +1688,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookAir9,1</string>
 			<key>SystemSerialNumber</key>
-			<string>INSERT-YOURS</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>INSERT-YOURS</string>
+			<string></string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
