@@ -5,7 +5,7 @@
 [Repo with *ALL* Ice Lake issues/problems/fixes/WA](https://github.com/m0d16l14n1/icelake-hackintosh)
 
  - Bootloader: OpenCore 0.7.4
- - macOS: Big Sur 11.5.2 / Monterey 12.0 Beta
+ - macOS: Big Sur 11.6 / Monterey 12.0 Beta
  
 ### Some details about laptop
 
@@ -60,7 +60,7 @@
 #### Peripherals: 
 
 - [ ] Thunderbolt 3 - only did dump from chip with programmer (i didn't test it myself, but it seems to be working with eGPU, without Hotplug support, result was reported by [kingo132]
-- [x] MicroSD card reader (USB-based Realtek) - not mounting cards in system, not detected at all (working OOTB under Linux/Windows). Currently working with new kext developed by [0xFireWolf] - RealtekCardReader.kext
+- [x] MicroSD card reader (USB-based Realtek) - not mounting cards in system, not detected at all (working OOTB under Linux/Windows). Currently working with new kext developed by [0xFireWolf] - [RealtekCardReader.kext](https://github.com/0xFireWolf/RealtekCardReader)
 - [ ] Wake-up from USB inserting - actually not need that at all, just to mention.
 
 #### Other
