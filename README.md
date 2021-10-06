@@ -59,13 +59,13 @@
 
 #### Peripherals: 
 
-- [ ] Thunderbolt 3 - only did dump from chip with programmer (i didn't test it myself, but it seems to be working with eGPU, without Hotplug support, result was reported by [kingo132]
+- [ ] Thunderbolt 3 - only did dump from chip with programmer (i didn't test it myself, but it seems to be working with eGPU, without Hotplug support, result was reported by [kingo132])
 - [x] MicroSD card reader (USB-based Realtek) - not mounting cards in system, not detected at all (working OOTB under Linux/Windows). Currently working with new kext developed by [0xFireWolf] - [RealtekCardReader.kext](https://github.com/0xFireWolf/RealtekCardReader)
 - [ ] Wake-up from USB inserting - actually not need that at all, just to mention.
 
 #### Other
 
-- [ ] Some vendor FnKeys are not working (Fn+F1 - switch WiFi; Fn+F7 - LCD/Projector switch; Fn+F12 - switch Num Lk). Others are working okay, like key brightness, switch on-off trackpad, volume and etc.
+- [ ] Some vendor FnKeys are not working (Fn+F1 - switch WiFi; Fn+F7 - LCD/Projector switch; Fn+F12 - switch Num Lk). Others are working okay, like keys for brightness, switching on-off trackpad, volume and etc.
 - [x] Touchpad is not working after hot reboot from Windows/Linux - you need to shutdown and boot to macOS to get it working. Touchpad required ACPI patch (GPIO) + codeless kext or ACPI patch to change name of touchpad to SYN3602 (fixed reboot from Windows) [Details about fix]
 - [ ] Fan RPM is not working. Trying to get it working now with latest changes in SMCSuperIO.kext
 
@@ -100,7 +100,7 @@ IUPs Information
 * [fewtarius] for AppleALC patch for Ice Lake and help
 * [agasecond] for fixing headphones switching/sound working after reboot/shutdown from Windows
 * [kingo132] for Ice Lake DBuf workaround
-* [0xFireWolf] for multiple Ice Lake graphics fixes (CDCLK/DVMT and DBuf), blacklight smooth transition, driver for Realtek card readers (PCIe/**USB-based**)
+* [0xFireWolf] for multiple Ice Lake graphics fixes (CDCLK/DVMT and DBuf), backlight smooth transition, driver for Realtek card readers (PCIe/**USB-based**)
 * [kasti0] for LID fix for his Lenovo, which helped me to make my lid work like it should with a small change (lid state)
 * [AppleLife] forum - [link to my topic] (Russian forum)
 * PCBeta forum
