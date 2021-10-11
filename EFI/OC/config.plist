@@ -458,24 +458,6 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
-			<dict>
-				<key>acpi-wake-type</key>
-				<data>AQAAAA==</data>
-				<key>device_type</key>
-				<string>USB controller</string>
-				<key>model</key>
-				<string>Ice Lake-LP USB 3.1 xHCI Host Controller</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0xD,0x0)</key>
-			<dict>
-				<key>acpi-wake-type</key>
-				<data>AQAAAA==</data>
-				<key>device_type</key>
-				<string>USB controller</string>
-				<key>model</key>
-				<string>Ice Lake Thunderbolt 3 USB Controller</string>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
 				<key>device_type</key>
@@ -484,8 +466,8 @@
 				<data>RgAAAA==</data>
 				<key>model</key>
 				<string>Intel Ice Lake Audio Controller</string>
-				<key>hda-gfx</key>
-				<data>AQAAAA==</data>
+				<key>No-hda-gfx</key>
+				<string>onboard-1</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
@@ -495,6 +477,10 @@
 				<data>AQAAAA==</data>
 				<key>AAPL,Gfx324</key>
 				<data>AQAAAA==</data>
+				<key>No-hda-gfx</key>
+				<string>onboard-1</string>
+				<key>igfxfw</key>
+				<data>AgAAAA==</data>
 				<key>enable-backlight-registers-fix</key>
 				<data>AQAAAA==</data>
 				<key>enable-backlight-smoother</key>
@@ -507,8 +493,6 @@
 				<data>AQAAAA==</data>
 				<key>enable-dbuf-early-optimizer</key>
 				<data>AQAAAA==</data>
-				<key>igfxfw</key>
-				<data>AgAAAA==</data>
 				<key>igfxpavp</key>
 				<data>AQAAAA==</data>
 			</dict>
@@ -1458,7 +1442,7 @@
 			<key>BlacklistAppleUpdate</key>
 			<true/>
 			<key>DmgLoading</key>
-			<string>Any</string>
+			<string>Signed</string>
 			<key>EnablePassword</key>
 			<false/>
 			<key>ExposeSensitiveData</key>
@@ -1466,9 +1450,9 @@
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
 			<key>PasswordHash</key>
-			<data>GyOG63yIjh2c3Qjj8Z2c+S8WPiZcKCYlsLpiGZrb7a8mpmLhYo+nt0NWl1G0GPvq5j2q0TpuKvF7l62htnJIFw==</data>
+			<data></data>
 			<key>PasswordSalt</key>
-			<data>xmfvMlpT1Win/wdWWF1/tw==</data>
+			<data></data>
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
@@ -1623,7 +1607,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 -noDC9 -wegdbg -hbfx-dump-nvram -hbfx-disable-patch-pci -hbfxdbg hbfx-ahbm=1 msgbuf=10485760</string>
+				<string>-v debug=0x100 keepsyms=1 -noDC9 -wegdbg msgbuf=10485760</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
