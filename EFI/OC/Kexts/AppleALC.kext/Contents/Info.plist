@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>20G165</string>
+	<string>19H1417</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.6.6</string>
+	<string>1.6.5</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,23 +25,23 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.6.6</string>
+	<string>1.6.5</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>13A233</string>
+	<string>12B45b</string>
 	<key>DTPlatformName</key>
 	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>11.3</string>
+	<string>11.0</string>
 	<key>DTSDKBuild</key>
-	<string>20E214</string>
+	<string>20A2408</string>
 	<key>DTSDKName</key>
-	<string>macosx11.3</string>
+	<string>macosx11.0</string>
 	<key>DTXcode</key>
-	<string>1300</string>
+	<string>1220</string>
 	<key>DTXcodeBuild</key>
-	<string>13A233</string>
+	<string>12B45b</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>ALCUserClientProvider</key>
@@ -13661,8 +13661,7 @@
 					<data>
 					AbccEAG3HQABtx4XAbcfkAG3DAICFwwCAUcM
 					AgGXByUCBQBFAgTQiQIFABsCBAxLAgUAEAIE
-					ACABlxwgAZcdkAGXHoEBlx8EAZcHJAGnHCAB
-					px0BAaceoAGnH5ABpwck
+					ACA=
 					</data>
 					<key>FuncGroup</key>
 					<integer>1</integer>
@@ -13670,7 +13669,7 @@
 					<integer>70</integer>
 					<key>WakeConfigData</key>
 					<data>
-					AbcMAgFHDAICFwwCAZcHJAGnByQ=
+					AbcMAgFHDAICFwwC
 					</data>
 					<key>WakeVerbReinit</key>
 					<true/>
@@ -13732,32 +13731,6 @@
 					<key>WakeConfigData</key>
 					<data>
 					AUcMAgG3DAI=
-					</data>
-					<key>WakeVerbReinit</key>
-					<true/>
-				</dict>
-				<dict>
-					<key>AFGLowPowerState</key>
-					<data>
-					AwAAAA==
-					</data>
-					<key>Codec</key>
-					<string>Conexant CX11970 (CX8400) for Acer Swift 3 SF313 (Ice Lake) by b0ltun</string>
-					<key>CodecID</key>
-					<integer>351346896</integer>
-					<key>ConfigData</key>
-					<data>
-					AXccEAF3HQEBdx4XAXcfkQF3DAIBlxwgAZcd
-					kAGXHoEBlx8EAWccEAFnHUABZx4hAWcfBAFn
-					DAIBlwckAaccIAGnHQEBpx6gAacfkAGnByQ=
-					</data>
-					<key>FuncGroup</key>
-					<integer>1</integer>
-					<key>LayoutID</key>
-					<integer>13</integer>
-					<key>WakeConfigData</key>
-					<data>
-					AXcMAgFnDAIBlwckAacHJA==
 					</data>
 					<key>WakeVerbReinit</key>
 					<true/>
