@@ -5,7 +5,7 @@
 [Repo with *ALL* Ice Lake issues/problems/fixes/WA](https://github.com/m0d16l14n1/icelake-hackintosh)
 
  - Bootloader: OpenCore 0.8.5
- - macOS: support starting from Catalina 10.15.4 up to Ventura 13
+ - macOS: supported starting from Catalina 10.15.4 up to Ventura 13
  
 ### Some details about laptop
 
