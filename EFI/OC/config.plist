@@ -142,6 +142,14 @@
 				<key>Path</key>
 				<string>SSDT-ADP1.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-PPMC.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PPMC.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
@@ -342,36 +350,6 @@
 				<key>TableSignature</key>
 				<data></data>
 			</dict>
-			<dict>
-				<key>Base</key>
-				<string></string>
-				<key>BaseSkip</key>
-				<integer>0</integer>
-				<key>Comment</key>
-				<string>##EXAMPLE of patch for FACP (Low Power Idle) 0 &gt; 1</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>5cYDAA==</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>9cQjAA==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>RkFDUA==</data>
-			</dict>
 		</array>
 		<key>Quirks</key>
 		<dict>
@@ -454,6 +432,8 @@
 			<integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
 			<false/>
+			<key>ResizeAppleGpuBars</key>
+			<integer>-1</integer>
 			<key>SetupVirtualMap</key>
 			<false/>
 			<key>SignalAppleOS</key>
@@ -472,6 +452,8 @@
 				<data>RgAAAA==</data>
 				<key>No-hda-gfx</key>
 				<string>onboard-1</string>
+				<key>No-idle-support</key>
+				<string>0</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
@@ -496,6 +478,16 @@
 				<key>enable-dbuf-early-optimizer</key>
 				<data>AQAAAA==</data>
 				<key>igfxpavp</key>
+				<data>AQAAAA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0xD,0x0)</key>
+			<dict>
+				<key>acpi-wake-type</key>
+				<data>AQAAAA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
+			<dict>
+				<key>acpi-wake-type</key>
 				<data>AQAAAA==</data>
 			</dict>
 		</dict>
@@ -992,6 +984,78 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>DebugEnhancer.kext</string>
+				<key>Comment</key>
+				<string>DebugEnhancer.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/DebugEnhancer</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext</string>
+				<key>Comment</key>
+				<string>VoodooInput.kext</string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooInput</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</string>
+				<key>Comment</key>
+				<string>VoodooPS2Mouse.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooPS2Mouse</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
+				<key>Comment</key>
+				<string>VoodooPS2Trackpad.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooPS2Trackpad</string>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array>
@@ -1008,6 +1072,8 @@
 				<string></string>
 				<key>MinKernel</key>
 				<string></string>
+				<key>Strategy</key>
+				<string>Disable</string>
 			</dict>
 		</array>
 		<key>Emulate</key>
@@ -1089,6 +1155,8 @@
 			<false/>
 			<key>AppleXcpmForceBoost</key>
 			<false/>
+			<key>CustomPciSerialDevice</key>
+			<false/>
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
@@ -1100,6 +1168,8 @@
 			<key>ExtendBTFeatureFlags</key>
 			<false/>
 			<key>ExternalDiskIcons</key>
+			<false/>
+			<key>ForceAquantiaEthernet</key>
 			<false/>
 			<key>ForceSecureBootScheme</key>
 			<false/>
@@ -1179,8 +1249,8 @@
 			<integer>0</integer>
 			<key>DisplayLevel</key>
 			<integer>2147483650</integer>
-			<key>SerialInit</key>
-			<false/>
+			<key>LogModules</key>
+			<string>*</string>
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
@@ -1209,11 +1279,7 @@
 		</array>
 		<key>Security</key>
 		<dict>
-			<key>AllowNvramReset</key>
-			<true/>
 			<key>AllowSetDefault</key>
-			<true/>
-			<key>AllowToggleSip</key>
 			<true/>
 			<key>ApECID</key>
 			<integer>0</integer>
@@ -1240,6 +1306,13 @@
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
+		<key>Serial</key>
+		<dict>
+			<key>Init</key>
+			<false/>
+			<key>Override</key>
+			<false/>
+		</dict>
 		<key>Tools</key>
 		<array>
 			<dict>
@@ -1261,6 +1334,8 @@
 				<false/>
 				<key>TextMode</key>
 				<false/>
+				<key>FullNvramAccess</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1281,6 +1356,8 @@
 				<false/>
 				<key>TextMode</key>
 				<false/>
+				<key>FullNvramAccess</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1300,6 +1377,8 @@
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
+				<false/>
+				<key>FullNvramAccess</key>
 				<false/>
 			</dict>
 			<dict>
@@ -1321,6 +1400,8 @@
 				<false/>
 				<key>TextMode</key>
 				<false/>
+				<key>FullNvramAccess</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1341,6 +1422,8 @@
 				<false/>
 				<key>TextMode</key>
 				<false/>
+				<key>FullNvramAccess</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Name</key>
@@ -1360,6 +1443,8 @@
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
+				<false/>
+				<key>FullNvramAccess</key>
 				<false/>
 			</dict>
 		</array>
@@ -1372,8 +1457,6 @@
 			<dict>
 				<key>DefaultBackgroundColor</key>
 				<data>AAAAAA==</data>
-				<key>UIScale</key>
-				<data>Ag==</data>
 			</dict>
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<dict>
@@ -1387,7 +1470,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 msgbuf=10485760 dc6config=0 -noDC9</string>
+				<string>-v debug=0x100 keepsyms=1 dc6config=0 -noDC9 -dbgenhdbg</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1410,10 +1493,9 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
 				<string>boot-args</string>
+				<string>ForceDisplayRotationInEFI</string>
 			</array>
 		</dict>
-		<key>LegacyEnable</key>
-		<false/>
 		<key>LegacyOverwrite</key>
 		<false/>
 		<key>LegacySchema</key>
@@ -1458,7 +1540,7 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string></string>
+			<string>ENTER YOURS</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
@@ -1472,7 +1554,7 @@
 			<key>SystemProductName</key>
 			<string>MacBookAir9,1</string>
 			<key>SystemSerialNumber</key>
-			<string></string>
+			<string>ENTER YOURS</string>
 			<key>SystemUUID</key>
 			<string></string>
 		</dict>
@@ -1506,16 +1588,22 @@
 		</dict>
 		<key>AppleInput</key>
 		<dict>
-			<key>GraphicsInputMirroring</key>
-			<false/>
 			<key>AppleEvent</key>
 			<string>Builtin</string>
 			<key>CustomDelays</key>
+			<false/>
+			<key>GraphicsInputMirroring</key>
 			<false/>
 			<key>KeyInitialDelay</key>
 			<integer>0</integer>
 			<key>KeySubsequentDelay</key>
 			<integer>5</integer>
+			<key>PointerPollMask</key>
+			<integer>-1</integer>
+			<key>PointerPollMax</key>
+			<integer>80</integer>
+			<key>PointerPollMin</key>
+			<integer>10</integer>
 			<key>PointerSpeedDiv</key>
 			<integer>1</integer>
 			<key>PointerSpeedMul</key>
@@ -1527,20 +1615,24 @@
 			<integer>0</integer>
 			<key>AudioDevice</key>
 			<string>PciRoot(0x0)/Pci(0x1F,0x3)</string>
-			<key>AudioOut</key>
-			<integer>0</integer>
+			<key>AudioOutMask</key>
+			<integer>1</integer>
 			<key>AudioSupport</key>
 			<true/>
-			<key>MinimumVolume</key>
-			<integer>100</integer>
+			<key>DisconnectHda</key>
+			<false/>
+			<key>MaximumGain</key>
+			<integer>-15</integer>
+			<key>MinimumAssistGain</key>
+			<integer>-30</integer>
+			<key>MinimumAudibleGain</key>
+			<integer>-55</integer>
 			<key>PlayChime</key>
 			<string>Auto</string>
 			<key>ResetTrafficClass</key>
 			<false/>
 			<key>SetupDelay</key>
 			<integer>0</integer>
-			<key>VolumeAmplifier</key>
-			<integer>143</integer>
 		</dict>
 		<key>ConnectDrivers</key>
 		<true/>
@@ -1555,6 +1647,8 @@
 				<string></string>
 				<key>Comment</key>
 				<string></string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Path</key>
@@ -1565,6 +1659,8 @@
 				<string></string>
 				<key>Comment</key>
 				<string></string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Path</key>
@@ -1575,6 +1671,8 @@
 				<string></string>
 				<key>Comment</key>
 				<string></string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Enabled</key>
@@ -1585,6 +1683,8 @@
 				<string></string>
 				<key>Comment</key>
 				<string></string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Enabled</key>
@@ -1595,6 +1695,8 @@
 				<string></string>
 				<key>Comment</key>
 				<string></string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Enabled</key>
@@ -1605,6 +1707,8 @@
 				<string></string>
 				<key>Comment</key>
 				<string>btrfs_x64.efi</string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Enabled</key>
@@ -1615,6 +1719,8 @@
 				<string></string>
 				<key>Comment</key>
 				<string>ExFatDxe.efi</string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Enabled</key>
@@ -1625,6 +1731,8 @@
 				<string></string>
 				<key>Comment</key>
 				<string>ext4_x64.efi</string>
+				<key>LoadEarly</key>
+				<false/>
 			</dict>
 		</array>
 		<key>Input</key>
@@ -1662,6 +1770,8 @@
 			<false/>
 			<key>ProvideConsoleGop</key>
 			<true/>
+			<key>ReconnectGraphicsOnConnect</key>
+			<false/>
 			<key>ReconnectOnResChange</key>
 			<false/>
 			<key>ReplaceTabWithSpace</key>
@@ -1672,6 +1782,8 @@
 			<false/>
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
+			<key>UIScale</key>
+			<integer>2</integer>
 			<key>UgaPassThrough</key>
 			<false/>
 		</dict>
@@ -1722,6 +1834,8 @@
 			<false/>
 			<key>EnableVectorAcceleration</key>
 			<true/>
+			<key>EnableVmx</key>
+			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>ForceOcWriteFlash</key>
@@ -1736,6 +1850,8 @@
 			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
+			<key>ResizeGpuBars</key>
+			<integer>-1</integer>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
