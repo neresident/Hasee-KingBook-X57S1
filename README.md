@@ -77,7 +77,7 @@ Intel(R) ME code versions:
     
     Vendor ID                              8086
     
-    FW Version                             13.0.40.1738 LP Consumer
+    FW Version                             13.0.62.2175 LP Consumer
 
 IUPs Information
 
