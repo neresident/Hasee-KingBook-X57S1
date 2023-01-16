@@ -4,7 +4,7 @@
 
 [Repo with *ALL* Ice Lake issues/problems/fixes/WA](https://github.com/m0d16l14n1/icelake-hackintosh)
 
- - Bootloader: OpenCore 0.8.5
+ - Bootloader: OpenCore 0.8.8
  - macOS: supported starting from Catalina 10.15.4 up to Ventura 13
  
 ### Some details about laptop
@@ -43,12 +43,13 @@
  - [x] WebCam (OOTB)
  - [x] NVME powermanagement  
  - [x] Thunderbolt 3 USB Type-C port is working (plug-replug) with latest USB map tool - [USBToolBox]. You can now map USB under Windows and the process became much easier
+  - [x] Hibernation fully functional (mode 3 & 25)
 
 ### Not working / Glitching / Bugging / WIP / Partly working
 
 #### Sound: 
 
-- [ ] Combojack problem: Jack mic is not working (Line-in) - still trying to fix that issue with creating own resources for [AppleALC] with [agasecond]
+- [ ] Combojack problem: Jack mic is not working (Line-in)
 - [ ] Audio through Type-C to HDMI dongles is not working
 
 #### Graphics related: 
@@ -95,13 +96,14 @@ IUPs Information
 
 * To all of [acidanthera] and [dortania] team members for all of their kexts/guides and etc 
 * Collaborateurs: [m0d16l14n1], [Ardentwheel]
-* All VoodooI2C developers, especially [ben9923] & [zhen-zen] for fixes and helping to get touchpad working
+* All VoodooI2C developers, especially [ben9923] & [zhen-zen] for fixes and help to get touchpad working
 * [OC-little] for some patches and guides
 * [fewtarius] for AppleALC patch for Ice Lake and help
 * [agasecond] for fixing headphones switching/sound working after reboot/shutdown from Windows
 * [kingo132] for Ice Lake DBuf workaround
 * [0xFireWolf] for multiple Ice Lake graphics fixes (CDCLK/DVMT and DBuf), backlight smooth transition, driver for Realtek card readers (PCIe/**USB-based**)
-* [kasti0] for LID fix for his Lenovo, which helped me to make my lid work like it should with a small change (lid state)
+* [kasti0] for LID fix for his Lenovo, which helped me to make my lid work as it should with a small change (lid state)
+* [CobanRamo] for finding, testing and sharing fix for hibernation
 * [AppleLife] forum - [link to my topic] (Russian forum)
 * PCBeta forum
 * Discord "Hackintosh Paradise" 
@@ -133,3 +135,4 @@ IUPs Information
 [AppleALC]: <https://github.com/acidanthera/AppleALC>
 [kingo132]: <https://github.com/kingo132>
 [USBToolBox]: <https://github.com/USBToolBox/tool>
+[CobanRamo]: <https://github.com/CobanRamo>
