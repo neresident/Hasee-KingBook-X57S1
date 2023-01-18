@@ -1330,7 +1330,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v -hbfx-disable-patch-pci hbfx-ahbm=1 msgbuf=10485760 debug=0x100 keepsyms=1 -noDC9</string>
+				<string>-v -hbfx-disable-patch-pci hbfx-ahbm=1 msgbuf=10485760 debug=0x100 keepsyms=1 -noDC9 dc6config=5</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
